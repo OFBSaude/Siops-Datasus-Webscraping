@@ -1,0 +1,106 @@
+# RECEITAS PARA APURAÇÃO DA APLICAÇÃO EM AÇÕES E SERVIÇOS PÚBLICOS DE SAÚDE	
+CREATE TABLE Receitas_apuração_sps (
+    municipio VARCHAR(255),
+    codigo_Municipio VARCHAR(255),
+    estado VARCHAR(255),
+    ano VARCHAR(255),
+    campo VARCHAR(255),
+    previsao_inicial FLOAT,
+    previsão_atualizada FLOAT,
+    Receitas_realizadas_Bimestre FLOAT,
+    Receitas_realizadas_Porcentagem FLOAT
+);
+
+CREATE TABLE Receitas_adicionais_financiamento (
+    municipio VARCHAR(255),
+    codigo_Municipio VARCHAR(255),
+    estado VARCHAR(255),
+    ano VARCHAR(255),
+    campo VARCHAR(255),
+    previsao_inicial FLOAT,
+    previsão_atualizada FLOAT,
+    Receitas_realizadas_Bimestre FLOAT,
+    Receitas_realizadas_Porcentagem FLOAT
+);
+
+CREATE TABLE Despesas_saude_natureza(
+    municipio VARCHAR(255),
+    codigo_Municipio VARCHAR(255),
+    estado VARCHAR(255),
+    ano VARCHAR(255),
+    campo VARCHAR(255),
+    dotação_inicial FLOAT,
+    dotação_atualizada FLOAT,
+    despesas_executadas_liquidadas FLOAT,
+    despesas_executadas_inscritas FLOAT,
+    despesas_executadas_porcentagem FLOAT
+);
+
+CREATE TABLE Despesas_saúde_não_computadas(
+    municipio VARCHAR(255),
+    codigo_Municipio VARCHAR(255),
+    estado VARCHAR(255),
+    ano VARCHAR(255),
+    campo VARCHAR(255),
+    dotação_inicial FLOAT,
+    dotação_atualizada FLOAT,
+    despesas_executadas_liquidadas FLOAT,
+    despesas_executadas_inscritas FLOAT,
+    despesas_executadas_porcentagem FLOAT
+);
+
+CREATE TABLE Despesas_saúde_subfunção(
+    municipio VARCHAR(255),
+    codigo_Municipio VARCHAR(255),
+    estado VARCHAR(255),
+    ano VARCHAR(255),
+    campo VARCHAR(255),
+    dotação_inicial FLOAT,
+    dotação_atualizada FLOAT,
+    despesas_executadas_liquidadas FLOAT,
+    despesas_executadas_inscritas FLOAT,
+    despesas_executadas_porcentagem FLOAT
+);
+
+CREATE TABLE Tabelas_adicionais(
+    municipio VARCHAR(255),
+    codigo_Municipio VARCHAR(255),
+    estado VARCHAR(255),
+    ano VARCHAR(255),
+    campo VARCHAR(255),
+    Total FLOAT
+);
+
+
+CREATE TABLE Receitas de Impostos e Transferências(
+	municipio VARCHAR(255),
+	codigo_Municipio VARCHAR(255),
+	estado VARCHAR(255),
+	ano VARCHAR(255),
+	campo VARCHAR(255),
+	Previsão_atualizada FLOAT,
+	Receita_Realizada FLOAT
+	)
+	
+CREATE TABLE Receitas de Transferências de Recursos(
+	municipio VARCHAR(255),
+	codigo_Municipio VARCHAR(255),
+	estado VARCHAR(255),
+	ano VARCHAR(255),
+	campo VARCHAR(255),
+	Previsão_atualizada FLOAT,
+	Receita_Realizada FLOAT
+	)
+	
+CREATE TABLE Despesa Total com Ações e Serviços Públicos(
+	municipio VARCHAR(255),
+	codigo_Municipio VARCHAR(255),
+	estado VARCHAR(255),
+	ano VARCHAR(255),
+	campo VARCHAR(255),
+	Dotação FLOAT,
+	Despesas_Empenhada FLOAT,
+	Despesas_Liquidadas FLOAT,
+	Despesas_Pagas FLOAT)
+	
+	
